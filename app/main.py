@@ -7,3 +7,6 @@ app = FastAPI()
 app.include_router(sensor_routes.router)
 
 app.include_router(auth_routes.router)
+from app.routes import health_routes
+
+app.include_router(health_routes.router)

@@ -2,7 +2,6 @@ from app.db.mongodb import user_collection
 from app.core.security import hash_password, verify_password, create_access_token
 
 
-#  Register
 async def register_user(user):
     existing = await user_collection.find_one({"email": user.email})
 

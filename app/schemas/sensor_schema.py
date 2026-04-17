@@ -7,5 +7,6 @@ class SensorData(BaseModel):
     pm25: float
     co: float
     co2: float
+    no2: float
     ier: float | None = None
     timestamp: datetime = Field(default_factory=datetime.utcnow)
