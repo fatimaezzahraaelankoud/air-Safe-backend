@@ -3,7 +3,7 @@ from app.schemas.sensor_schema import SensorData
 from app.services.sensor_service import create_sensor_data, get_all_sensors
 from app.services.simulation_service import simulate_sensor
 
-router = APIRouter()
+router = APIRouter(prefix="/sensor", tags=["Sensor Data"])
 
 @router.post("/sensor")
 async def add_sensor(data: SensorData):
