@@ -14,7 +14,6 @@ async def add_sensor(data: SensorData):
 async def get_sensors():
     return await get_all_sensors()
 
-
 @router.get("/simulate")
 async def simulate():
     data = simulate_sensor()

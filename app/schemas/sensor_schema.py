@@ -6,7 +6,5 @@ class SensorData(BaseModel):
     humidity: float
     pm25: float
     co: float
-    co2: float
-    no2: float
     ier: float | None = None
     timestamp: datetime = Field(default_factory=datetime.utcnow)
